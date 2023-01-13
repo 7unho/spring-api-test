@@ -17,6 +17,10 @@ repositories {
 
 dependencies {
 	implementation("org.springframework.boot:spring-boot-starter-web")
+	implementation("org.springframework.boot:spring-boot-starter-data-jpa") // JPA
+	implementation("org.springframework.boot:spring-boot-starter-thymeleaf") // Thymeleaf
+	implementation("org.springframework.boot:spring-boot-starter-security")
+	implementation("org.springframework.security:spring-security-test")
 	implementation("org.mybatis.spring.boot:mybatis-spring-boot-starter:2.3.0")
 	implementation ("org.springframework.boot:spring-boot-starter-mail:2.7.0")
 	developmentOnly("org.springframework.boot:spring-boot-devtools")
