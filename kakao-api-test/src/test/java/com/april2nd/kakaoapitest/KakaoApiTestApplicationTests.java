@@ -1,13 +1,13 @@
-package com.april2nd.socialloginapi;
+package com.april2nd.kakaoapitest;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
 @SpringBootTest
-class SocialLoginApiApplicationTests {
+class KakaoApiTestApplicationTests {
 
-    @Test
-    void contextLoads() {
-    }
+	@Test
+	void contextLoads() {
+	}
 
 }

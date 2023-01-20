@@ -3,10 +3,11 @@
   <component name="ExternalStorageConfigurationManager" enabled="true" />
   <component name="FrameworkDetectionExcludesConfiguration">
     <file type="web" url="file://$PROJECT_DIR$/email-cert-api" />
+    <file type="web" url="file://$PROJECT_DIR$/kakao-api-test" />
     <file type="web" url="file://$PROJECT_DIR$/social-login-api" />
     <file type="web" url="file://$PROJECT_DIR$/spring-security-pw-encoding" />
   </component>
-  <component name="ProjectRootManager" version="2" project-jdk-name="1.8" project-jdk-type="JavaSDK">
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_1_8" project-jdk-name="1.8" project-jdk-type="JavaSDK">
     <output url="file://$PROJECT_DIR$/out" />
   </component>
 </project>

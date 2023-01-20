@@ -15,10 +15,10 @@
       </GradleProjectSettings>
       <GradleProjectSettings>
         <option name="distributionType" value="DEFAULT_WRAPPED" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$/social-login-api" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$/kakao-api-test" />
         <option name="modules">
           <set>
-            <option value="$PROJECT_DIR$/social-login-api" />
+            <option value="$PROJECT_DIR$/kakao-api-test" />
           </set>
         </option>
       </GradleProjectSettings>
