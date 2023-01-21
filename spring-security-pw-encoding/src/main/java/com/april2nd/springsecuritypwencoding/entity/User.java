@@ -26,10 +26,14 @@ public class User {
     @Column(name = "email")
     private String email;
 
+    @Column(name = "token")
+    private String token;
+
     @Builder
-    public User(String id, String password, String email) {
+    public User(String id, String password, String email, String token) {
         this.id = id;
         this.password = password;
         this.email = email;
+        this.token = token;
     }
 }

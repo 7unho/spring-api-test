@@ -15,7 +15,9 @@ public class UserDto {
 
     private String email;
 
+    private String token;
+
     public User toEntity() {
-        return User.builder().id(id).password(password).email(email).build();
+        return User.builder().id(id).password(password).email(email).token(token).build();
     }
 }
