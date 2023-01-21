@@ -2,12 +2,9 @@
 <project version="4">
   <component name="CompilerConfiguration">
     <bytecodeTargetLevel>
-      <module name="social-login-api" target="1.8" />
-      <module name="social-login-api.main" target="1.8" />
-      <module name="social-login-api.test" target="1.8" />
-      <module name="spring-security-pw-encoding" target="1.8" />
-      <module name="spring-security-pw-encoding.main" target="1.8" />
-      <module name="spring-security-pw-encoding.test" target="1.8" />
+      <module name="kakao-api-test" target="1.8" />
+      <module name="kakao-api-test.main" target="1.8" />
+      <module name="kakao-api-test.test" target="1.8" />
     </bytecodeTargetLevel>
   </component>
 </project>
