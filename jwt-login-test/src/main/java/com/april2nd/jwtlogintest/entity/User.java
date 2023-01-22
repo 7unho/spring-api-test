@@ -11,7 +11,7 @@ import javax.persistence.*;
 @NoArgsConstructor
 @AllArgsConstructor
 @Builder
-@Entity
+@Entity(name = "USER")
 public class User {
 
     @GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -19,4 +19,8 @@ public class User {
     private Long id;
     private String userId;
     private String userPw;
+
+    @OneToOne(fetch = FetchType.LAZY)
+    @JoinColumn(name = "auth_id")
+    private Auth auth;
 }

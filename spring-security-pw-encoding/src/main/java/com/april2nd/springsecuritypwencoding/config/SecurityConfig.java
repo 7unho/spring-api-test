@@ -18,6 +18,7 @@ import org.springframework.security.web.util.matcher.AntPathRequestMatcher;
 @AllArgsConstructor
 public class SecurityConfig {
 
+    @Autowired
     private final UserDetailsService userDetailsService;
 
     @Bean
@@ -34,13 +35,13 @@ public class SecurityConfig {
                 .anyRequest().authenticated() // 그 외 모든 리소스를 의미하며 인증 필요
                 .and()
                 .formLogin()
-                .permitAll()
-                .loginPage("/login") // 기본 로그인 페이지
+                    .permitAll()
+                    .loginPage("/login") // 기본 로그인 페이지
                 .and()
-                .logout()
-                .permitAll()
-                // .logoutUrl("/logout") // 로그아웃 URL (기본 값 : /logout)
-                // .logoutSuccessUrl("/login?logout") // 로그아웃 성공 URL (기본 값 : "/login?logout")
+                    .logout()
+                    .permitAll()
+                .logoutUrl("/logout") // 로그아웃 URL (기본 값 : /logout)
+                .logoutSuccessUrl("/login?logout") // 로그아웃 성공 URL (기본 값 : "/login?logout")
                 .logoutRequestMatcher(new AntPathRequestMatcher("/logout")) // 주소창에 요청해도 포스트로 인식하여 로그아웃
                 .deleteCookies("JSESSIONID") // 로그아웃 시 JSESSIONID 제거
                 .invalidateHttpSession(true) // 로그아웃 시 세션 종료
